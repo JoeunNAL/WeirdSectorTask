@@ -1,8 +1,5 @@
-class Printer {
+class Printer1 {
   printHearts(number) {
-    // 입력: 숫자(음수, 양수)
-    // 출력: 문자열
-
     const abs = Math.abs(parseInt(number));
 
     let text = '';
@@ -16,7 +13,7 @@ class Printer {
           text += '♡';
         }
       } else {
-        for (let j = abs; j - i >= 0; j--) {
+        for (let j = abs; j >= i; j--) {
           text += '♡';
         }
       }
@@ -28,7 +25,7 @@ class Printer {
   }
 }
 
-const task = new Printer();
+const task = new Printer1();
 console.log(task.printHearts(2));
 console.log(task.printHearts(5));
 console.log(task.printHearts(-4));
