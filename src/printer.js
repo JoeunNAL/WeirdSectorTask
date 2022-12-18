@@ -1,6 +1,6 @@
-class Printer {
+const printer = {
   printHearts(number) {
-    const abs = Math.abs(parseInt(number));
+    const abs = Math.abs(parseInt(number, 10));
 
     let text = '';
     if (number === 0) {
@@ -21,7 +21,7 @@ class Printer {
       }
     }
     return text;
-  }
-}
+  },
+};
 
-module.exports = Printer;
+export default printer;
