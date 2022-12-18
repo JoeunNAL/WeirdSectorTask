@@ -10,3 +10,13 @@ ul,
 li {
   list-style: none;
 }
+
+.input_section {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.heart_print_section {
+  padding: 0 2rem;
+}
